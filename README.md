@@ -1,7 +1,5 @@
 # react-test-task
 
-[DEMO LINK](https://arielg0rl.github.io/react-ts-template/)
-
 in order to run this project on your mac:
 - clone the repository
 - npm install
