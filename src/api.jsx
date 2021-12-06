@@ -45,7 +45,7 @@ export const newReply = (commentId, data) => {
     },
     body: JSON.stringify({
       id: Math.random(),
-      commentId: commentId,
+      commentId: `${Number(commentId)}`,
       name: 'Terry Bator',
       body: data,
       date: Date.now(),

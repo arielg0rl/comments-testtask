@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { NewCommentInput } from './components/NewComponentInput';
 import { CommentsList } from './components/CommentsList';
 import { getComments } from './api';
+import './App.css';
 
 function App() {
   const [comments, setComments] = useState([]);
@@ -22,10 +23,12 @@ function App() {
 
   return (
     <div className="App">
-      <NewCommentInput addComment={updateComments} />
-      {
-        comments && <CommentsList comments={comments}/>
-      }
+      <div className="App__container">
+        <NewCommentInput addComment={updateComments} />
+        {
+          comments && <CommentsList comments={comments}/>
+        }
+      </div>
     </div>
   );
 }

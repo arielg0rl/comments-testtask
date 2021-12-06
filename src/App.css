@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  min-width: 1184px;
+  margin: 0 auto;
+  padding: 48px 88px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.comment-form--main {
+  margin-bottom: 32px;
+}
+.comment-form--main:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #CDD7E5;
+  top: 224px;
+}
+.comment-form__avatar {
+  height: 120px;
+  margin-right: 32px;
+}
+.comment-form__container {
+  display: grid;
+  flex-direction: column;
+  justify-items: end;
+}
+.comment-form__input {
+  width: 856px;
+  height: 120px;
+  border: 1px solid #CDD7E5;
+  border-radius: 4px;
+  outline: 1px solid #CDD7E5;
+  padding: 16px 24px;
+  background-color: #FCFDFF;
+}
+.comment-form__button {
+  width: 168px;
+  height: 56px;
+  background-color: #3EBF8A;
+  border: 1px solid #3EBF8A;
+  border-radius: 3px;
+  margin: 16px 0 32px;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+}
+
+.comment {
+  display: grid;
+  grid-template-columns: 152px 1fr;
+}
+.comment__name {
+  font-size: 24px;
+  font-weight: 700;
+}
+.comment__date {
+  color: #697082;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.comment__text {
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+.comment__name-date {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.comment__buttons-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.comment__cancel-button {
+  align-self: left;
+}
+.comment__buttons {
+  color: #697082;
+  line-height: 22px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.reply__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.reply__avatar {
+  height: 88px;
+  margin-right: 32px;
+  margin-bottom: 40px;
+}
+.reply__container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.reply__body {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+.reply__text-body {
+  margin-bottom: 40px;
+}
+.reply__to {
+  color: #697082;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,3 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
 }
+
+
+
+.App {
+  display: grid;
+  justify-content: center;
+  min-width: 1184px;
+  margin: 0 auto;
+  padding: 48px 88px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  &--main {
+    margin-bottom: 32px;
+  }
+
+  &--main:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #CDD7E5;
+    top: 224px;
+  }
+
+  &__avatar {
+    height: 120px;
+    margin-right: 32px;
+  }
+
+  &__container {
+    display: grid;
+    flex-direction: column;
+    justify-items: end;
+  }
+
+  &__input {
+    width: 856px;
+    height: 120px;
+    border: 1px solid #CDD7E5;
+    border-radius: 4px;
+    outline: 1px solid #CDD7E5;
+    padding: 16px 24px;
+    background-color: #FCFDFF;
+  }
+
+  &__button {
+    width: 168px;
+    height: 56px;
+    background-color: #3EBF8A;
+    border: 1px solid #3EBF8A;
+    border-radius: 3px;
+    margin: 16px 0 32px;
+    font-style: medium;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+  }
+}
+
+.comment {
+  display: grid;
+  grid-template-columns: 152px 1fr;
+
+  &__name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__date {
+    color: #697082;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__text {
+    font-size: 22px;
+    margin-bottom: 23px;
+  }
+
+  &__name-date {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__buttons-container {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__cancel-button {
+    align-self: left;
+  }
+
+  &__buttons {
+    color: #697082;
+    line-height: 22px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.reply {
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__avatar {
+    height: 88px;
+    margin-right: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+  }
+
+  &__text-body {
+    margin-bottom: 40px;
+  }
+
+  &__to {
+    color: #697082;
+
+    font-size: 18px;
+  }
+}
+
