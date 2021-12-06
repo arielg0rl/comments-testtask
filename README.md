@@ -1,6 +1,13 @@
-# react-template
+# react-test-task
 
 [DEMO LINK](https://arielg0rl.github.io/react-ts-template/)
+
+in order to run this project on your mac:
+- clone the repository
+- npm install
+- npx json-server --watch db.json
+- npm start
+:)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
